@@ -1,0 +1,120 @@
+.navbar_main_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #FFF;
+  border-bottom: 1px solid #ccc;
+}
+
+.navbar_left_part {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.navbar_left_part_info{
+  flex: 1;
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-size: 18px;
+  color: #bbb;
+  letter-spacing: 5px;
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+
+}
+
+.navbar_active_brand{
+  border-bottom: 3px solid #AC935F;
+  color: #AC935F;
+  height: 28px;
+}
+
+.navbar_right_part{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: #bbb;
+}
+
+.navbar_right_part ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-right: 50px;
+}
+
+.navbar_right_part li {
+  font-size: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding:  0 20px;
+  cursor: pointer;
+}
+
+.navbar_right_part li:hover{
+  color: #AC935F
+}
+
+.navbar_right_part img {
+  width: 40px;
+  cursor: pointer;
+}
+
+.navbar_right_part img:hover {
+  opacity: .5;
+}
+
+.only_show_on_mobile{
+  display: none;
+}
+
+@media screen and (max-width: 750px){
+  .navbar_main_wrapper, .navbar_right_part ul{
+    flex-direction: column;
+  }
+
+  .navbar_right_part {
+    flex-wrap: wrap;
+  }
+
+  .navbar_right_part ul {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar_right_part li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .navbar_left_part {
+    margin-left: 0px;
+  }
+
+  .navbar_bag_icon_mobile {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+  }
+  
+  .only_show_on_mobile{
+    display: block;
+
+  }
+
+  .only_show_on_mobile button {
+    background: transparent;
+    border: 1px solid black;
+    margin: 10px;
+    cursor: pointer;
+  }
+}
