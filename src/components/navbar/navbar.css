@@ -60,7 +60,8 @@
 }
 
 .navbar_right_part li:hover{
-  color: #AC935F
+  color: #AC935F;
+  transition: all .5s;
 }
 
 .navbar_right_part img {
@@ -70,6 +71,7 @@
 
 .navbar_right_part img:hover {
   opacity: .5;
+  transition: all .5s;
 }
 
 .only_show_on_mobile{
